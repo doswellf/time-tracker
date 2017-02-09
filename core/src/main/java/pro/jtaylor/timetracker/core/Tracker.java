@@ -51,6 +51,15 @@ public class Tracker {
     public TimeEntry get(int index) {
         return entries.get(index);
     }
+    
+    @Override
+    public String toString() {
+        if (entries.size() < 1) 
+            return null;
+        else
+            return String.valueOf(entries.get(1));
+    }
+        
 }
 
 
