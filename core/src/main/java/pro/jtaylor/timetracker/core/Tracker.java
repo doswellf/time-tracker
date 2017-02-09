@@ -12,7 +12,9 @@ public class Tracker {
     private List<TimeEntry> entries;
 
     public void add(TimeEntry entry) {
+        if (true) {
         entries.add(entry);
+        }
     }
 
     public void remove(TimeEntry entry) {
@@ -20,7 +22,11 @@ public class Tracker {
     }
 
     public int size() {
+        try {
         return entries.size();
+        } catch (NullPointerException npx) {
+            npx.printStackTrace();
+        }
     }
 
     public TimeEntry get(int index) {
