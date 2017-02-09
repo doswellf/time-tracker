@@ -26,7 +26,8 @@ public class Tracker {
         return entries.size();
         } catch (NullPointerException npx) {
             npx.printStackTrace();
-        }
+        } 
+        return 0;
     }
 
     public TimeEntry get(int index) {
