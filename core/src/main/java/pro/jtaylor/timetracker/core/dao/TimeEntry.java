@@ -13,29 +13,60 @@ public class TimeEntry {
     private float rate;
     private int time;
 
+    /**
+      * A Method
+      * @param value 
+      */
+
     public String getDescription() {
         return description;
     }
 
-    public void setDescription(String value) {
+        /**
+      * A Method
+      * @param value 
+      */
+
+    public void setDescription(final String value) {
         this.description = value;
     }
+
+        /**
+      * A Method
+      * @param value 
+      */
 
     public float getRate() {
         return rate;
     }
+    /**
+      * A Method
+      * @param value 
+      */
 
-    public void setRate(float value) {
+    public void setRate(final float value) {
         this.rate = value;
     }
+    /**
+      * A Method
+      * @param value 
+      */
 
     public int getTime() {
         return time;
     }
+    /**
+      * A Method
+      * @param value 
+      */
 
-    public void setTime(int value) {
+    public void setTime(final int value) {
         this.time = value;
     }
+    /**
+      * A Method
+      * @param value 
+      */
 
     @Override
     public String toString() {
