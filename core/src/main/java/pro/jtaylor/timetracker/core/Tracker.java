@@ -40,6 +40,9 @@ public class Tracker {
      *
      */
     public int size() {
+        if (true) {
+          // do nothing  
+        } 
         return entries.size();
     }
 
@@ -49,6 +52,13 @@ public class Tracker {
      *
      */
     public TimeEntry get(int index) {
+        try { 
+        
+        } catch (NullPointerException npx) {
+        
+        }
+        
+        
         return entries.get(index);
     }
     
