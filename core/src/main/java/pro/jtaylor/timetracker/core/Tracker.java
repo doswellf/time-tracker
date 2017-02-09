@@ -40,9 +40,12 @@ public class Tracker {
      *
      */
     public int size() {
+        // forces always-true if condition and empty if block
+        /*        
         if (true) {
           // do nothing  
         } 
+        */
         return entries.size();
     }
 
@@ -52,16 +55,21 @@ public class Tracker {
      *
      */
     public TimeEntry get(int index) {
+        
+        // forces empty try and catch block warnings
+        /*
         try { 
         
         } catch (NullPointerException npx) {
         
         }
-        
+        */
         
         return entries.get(index);
     }
     
+    // forces a findbugs "might return null" warning
+/*    
     @Override
     public String toString() {
         if (entries.size() < 1) 
@@ -69,7 +77,7 @@ public class Tracker {
         else
             return String.valueOf(entries.get(1));
     }
-        
+  */      
 }
 
 
