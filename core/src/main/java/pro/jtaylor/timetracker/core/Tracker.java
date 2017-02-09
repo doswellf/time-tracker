@@ -21,7 +21,7 @@ public class Tracker {
      *
      */
     
-    public void add(TimeEntry entry) {
+    public void add(final TimeEntry entry) {
         entries.add(entry);
     }
 
@@ -30,7 +30,7 @@ public class Tracker {
      * @param entry
      *
      */
-    public void remove(TimeEntry entry) {
+    public void remove(final TimeEntry entry) {
         entries.remove(entry);
     }
 
@@ -43,18 +43,18 @@ public class Tracker {
         // forces always-true if condition and empty if block
         /*        
         if (true) {
-          // do nothing  
-        } 
+          // do nothing
+        }
         */
         return entries.size();
     }
 
     /**
      * add
-     * @param entry
-     *
+     * @param index
+     * @return TimeEntry
      */
-    public TimeEntry get(int index) {
+    public TimeEntry get(final int index) {
         
         // forces empty try and catch block warnings
         /*
